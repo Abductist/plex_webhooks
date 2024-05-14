@@ -9,6 +9,7 @@ import aiohttp
 
 from homeassistant.const import CONF_WEBHOOK_ID
 import homeassistant.helpers.config_validation as cv
+from homeassistant.components import webhook
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -78,7 +79,7 @@ async def handle_webhook(hass, webhook_id, request):
 async def async_setup(hass, config):
     _LOGGER.debug('Initing Plex Webhooks!')
     webhook_id = config[DOMAIN][CONF_WEBHOOK_ID]
-    hass.components.webhook.async_register(
-        DOMAIN, "Plex", webhook_id, handle_webhook
+    webhook.async_register(
+        hass, DOMAIN, "Plex", webhook_id, handle_webhook
     )
     return True
