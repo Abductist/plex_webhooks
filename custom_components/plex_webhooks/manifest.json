@@ -1,6 +1,7 @@
 {
     "domain": "plex_webhooks",
     "name": "Plex Webhooks",
+	"version": "0.7",
     "documentation": "https://github.com/JBassett/plex_webhooks",
     "dependencies": [
         "webhook"
