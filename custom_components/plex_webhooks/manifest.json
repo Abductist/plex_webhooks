@@ -2,12 +2,13 @@
     "domain": "plex_webhooks",
     "name": "Plex Webhooks",
     "version": "0.7",
-    "documentation": "https://github.com/JBassett/plex_webhooks",
+    "documentation": "https://github.com/Abductist/plex_webhooks",
     "dependencies": [
         "webhook"
     ],
     "codeowners": [
-        "@JBassett"
+        "@JBassett",
+        "Abductist"
     ],
     "requirements": []
 }
